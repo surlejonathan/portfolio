@@ -38,6 +38,7 @@ const Header = ({ socials, cv }: Props) => {
             fgColor="white"
             bgColor="transparent"
             className="opacity-50"
+            target="_blank"
           />
         ))}
         <a

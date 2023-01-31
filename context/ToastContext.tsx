@@ -4,10 +4,10 @@ import Toast from '../components/Toast/Toast';
 interface Props {
   children: ReactNode;
 }
-
+export type Color = '' | 'green' | 'red';
 interface ContextType {
   isVisible: boolean;
-  fireToast: (description: string, backgroundColor: string) => void;
+  fireToast: (description: string, backgroundColor: Color) => void;
   closeToast: () => void;
 }
 
@@ -20,9 +20,9 @@ export const ToastContext = createContext<ContextType>({
 export const ToastContextProvider = ({ children }: Props) => {
   const [isVisible, setVisible] = useState(false);
   const [message, setMessage] = useState('');
-  const [color, setColor] = useState('');
+  const [color, setColor] = useState<Color>('green');
 
-  const fireToast = (description: string, backgroundColor: string) => {
+  const fireToast = (description: string, backgroundColor: Color) => {
     setVisible(true);
     setMessage(description);
     setColor(backgroundColor);

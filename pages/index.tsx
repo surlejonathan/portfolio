@@ -43,13 +43,11 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <Header socials={socials} cv={cvUrl} />
 
         {/* Hero */}
-
         <section id="hero" className="snap-start">
           <Hero pageInfo={pageInfo} />
         </section>
 
         {/* About */}
-
         <section id="about" className="snap-start">
           <About pageInfo={pageInfo} />
         </section>
@@ -60,7 +58,6 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         </section>
 
         {/* Experience */}
-
         <section id="experiences" className="snap-start">
           <WorkExperiences experiences={experiences} />
         </section>
@@ -71,7 +68,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         </section>
 
         {/* Contact Me */}
-        <section id="contact" className="snap-start">
+        <section id="contact" className="snap-end">
           <Contact />
         </section>
 

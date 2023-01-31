@@ -2,7 +2,6 @@ import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image';
-import photoProfil from '../../public/photo-profil.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PageInfo } from '../../typings';

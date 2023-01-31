@@ -1,9 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { SocialIcon } from 'react-social-icons';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { postMessage } from '../../utils/postMessage';
-import Toast from '../Toast/Toast';
 import { ToastContext } from '../../context/ToastContext';
 
 interface Props {}
@@ -46,7 +44,7 @@ const Contact = (props: Props) => {
       </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-4 w-full max-w-sm mb-16 "
+        className="flex flex-col justify-end gap-4 w-full max-w-sm mb-16 "
       >
         <input
           className="contactInput"

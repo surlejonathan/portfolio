@@ -68,9 +68,9 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         </section>
 
         {/* Contact Me */}
-        <section id="contact" className="snap-end">
+        {/*         <section id="contact" className="snap-end">
           <Contact />
-        </section>
+        </section> */}
 
         <footer className="sticky bottom-16 md:bottom-5 flex md:justify-center">
           <Link href="#hero">
@@ -85,11 +85,11 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const pageInfo = await fetchPageInfo();
-  const experiences = await fetchExperiences();
-  const skills = await fetchSkills();
-  const projects = await fetchProjects();
-  const socials = await fetchSocials();
+  const pageInfo = (await fetchPageInfo()) || null;
+  const experiences = (await fetchExperiences()) || [];
+  const skills = (await fetchSkills()) || [];
+  const projects = (await fetchProjects()) || [];
+  const socials = (await fetchSocials()) || [];
 
   return {
     props: { pageInfo, experiences, skills, projects, socials },

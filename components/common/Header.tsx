@@ -54,7 +54,7 @@ const Header = ({ socials, cv }: Props) => {
 
       {/* Contact */}
 
-      <motion.div
+      {/* <motion.div
         initial={{
           x: 500,
           opacity: 0,
@@ -84,7 +84,7 @@ const Header = ({ socials, cv }: Props) => {
         >
           Contact
         </Link>
-      </motion.div>
+      </motion.div> */}
     </header>
   );
 };

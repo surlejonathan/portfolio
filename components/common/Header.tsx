@@ -41,7 +41,7 @@ const Header = ({ socials, cv }: Props) => {
             target="_blank"
           />
         ))}
-        <a
+        {/* <a
           href={cv}
           target="_blank"
           rel="noreferrer"
@@ -49,7 +49,7 @@ const Header = ({ socials, cv }: Props) => {
           download
         >
           <PaperClipIcon className="w-[50px] px-3 opacity-50 cursor-pointer" />
-        </a>
+        </a> */}
       </motion.div>
 
       {/* Contact */}
